@@ -1,0 +1,16 @@
+{
+  "pages":[
+
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#6495ED",
+    "navigationBarTitleText": "微投稿",
+    "navigationBarTextStyle":"black"
+  },
+ 
+  "debug":true
+}

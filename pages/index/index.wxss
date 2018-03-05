@@ -1,0 +1,43 @@
+/**index.wxss**/
+.container
+{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    padding:10rpx;
+}
+navigator
+{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  overflow: hidden;
+}
+.tmp
+{
+    position:relative;
+    margin-bottom: 10rpx;
+    width:100%;
+    height:100rpx;
+    padding:10rpx 0 10rpx 0;
+   
+}
+.img
+{
+  float:left;
+}
+.imgs image
+{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:200rpx;
+}
+.title
+{
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  float:right;
+  width:70%;
+  height:80rpx;
+  padding:20rpx 0 0 20rpx;
+}
