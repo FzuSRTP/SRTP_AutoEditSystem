@@ -1,0 +1,17 @@
+ <!-- detail.wxml -->
+<import src="../tabBar/tabBar.wxml"/>
+<view class="detail">
+<!--自定义tabBar组件-->
+  <form bindsubmit="formBindSubmit" >
+      <view class="titleView">
+        <input name="title" class="titleInput" placeholder="请输入投稿标题" auto-focus/>
+      </view>  
+      <view class="contentView">
+        <textarea name="content" class="contentInput"  maxlength="-1" placeholder="请输入投稿内容" auto-focus />
+      </view> 
+      <view class="subbtn">
+        <button hover-class="button-hover" class="submitBtn" form-type='submit'>提  交</button>
+      </view>
+  </form>
+  <template is = "tabBar" data="{{tabBar}}"/>
+</view>   

@@ -1,0 +1,10 @@
+<template name="tabBar">
+    <view class="tabBar_box" style="background-color:{{tabBar.backgroundColor}};border-top-color:{{tabBar.borderColor}};{{tabBar.position == 'top' ? 'top:0' : 'bottom:0'}}">
+      <block wx:for="{{tabBar.list}}"  wx:for-item = "item" wx:key = "index">
+        <navigator class="tabBar_nav" url="{{item.pagePath}}" style="width:{{1/tabBar.list.length*100}}%;color:{{item.selected ? tabBar.selectedColor : tabBar.color}}" open-type="redirect">
+          <image class="tabBar_icon" src="{{item.selected ? item.selectedIconPath : item.iconPath}}"></image>
+          <text>{{item.text}}</text>
+        </navigator>
+      </block>
+    </view>
+</template>

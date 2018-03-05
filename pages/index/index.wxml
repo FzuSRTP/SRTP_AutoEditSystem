@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+    <template name="tableView">
+    <navigator url="../../pages/detail/detail?id={{id}}" hover-class = "navigator-hover">
+      <view class="imgs"><image src="{{img}}" class="in-img" background-size = "cover" mode="scaleToFit"></image>
+      </view>
+    <view class="title">{{title}}</view>
+    </navigator>
+    </template>
+    <view wx:for="{{newList}}" class="tmp">
+      <template is="tableView" data="{{...item}}"/>
+    </view>
+    
+</view>
