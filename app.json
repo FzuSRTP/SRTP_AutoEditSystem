@@ -3,14 +3,15 @@
 
     "pages/index/index",
     "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/account/account",
+    "pages/account/feedback/feedback",
+    "pages/account/release/release"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#6495ED",
     "navigationBarTitleText": "微投稿",
     "navigationBarTextStyle":"black"
-  },
- 
-  "debug":true
+  }
 }

@@ -1,8 +1,10 @@
 //index.js
 //获取应用实例
-const app = getApp()
+var Bmob = require('../../utils/bmob.js')
+var common = require('../../utils/common.js');
+var app = getApp();
+var that;
 Page({
-  
   data: {
     newList:[
       {id:1,title:"福州大学",img:"../../images/1.jpg"},
@@ -11,6 +13,13 @@ Page({
       { id: 4, title: "厦门大学", img: "../../images/4.jpg" },
       { id: 5, title: "社会大学", img: "../../images/5.jpeg" },
     ],
+    writeDiary: false,
+    loading: false,
+    windowHeight: 0,
+    windowWidth: 0,
+    limit: 10,
+    diaryList: [],
+    modifyDiarys: false,
     lastid:0
   },
   //事件处理函数
@@ -45,4 +54,5 @@ Page({
       }
     })
   }
+  
 })
